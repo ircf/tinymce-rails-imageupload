@@ -11,6 +11,6 @@ Rake::Task[assets_task].enhance do
   
   installer = TinyMCE::Rails::AssetInstaller.new(assets, target, manifest)
   #installer.log_level = Logger::INFO
-  installer.strategy = config.tinymce.install
+  #installer.strategy = config.tinymce.install
   installer.install
 end
